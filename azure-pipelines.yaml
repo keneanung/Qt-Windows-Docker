@@ -1,0 +1,5 @@
+pool:
+  vmImage: 'vs2017-win2016'
+  
+steps:
+- script: docker build -t keneanung/qt-windows .  # add options to this command to meet your needs
