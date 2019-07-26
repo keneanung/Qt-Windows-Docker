@@ -1,6 +1,6 @@
 # escape=`
 
-FROM mcr.microsoft.com/windows/servercore:ltsc2016
+FROM microsoft/windowsservercore
 
 COPY qt-silent-install.qs C:\src\
 COPY install.ps1 C:\src\
