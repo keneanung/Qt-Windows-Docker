@@ -12,5 +12,5 @@ install:
 
 build_script:
   - "docker build -t keneanung/qt-windows:5.12.2-mingw-x86 ."
-  - echo %DOCKER_PASS% | docker login -u "%DOCKER_USER%" --password-stdin
+  - docker login -u keneanung -p "%DOCKER_PASS%"
   - "docker push keneanung/qt-windows:5.12.2-mingw-x86"
