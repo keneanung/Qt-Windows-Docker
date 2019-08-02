@@ -5,6 +5,10 @@ environment:
   DOCKER_PASS:
     secure: 2zGJE9haG3rnIgDPVHvvMQ==
 
+init:
+  - ps: Remove-Item -Recurse -Force C:/cygwin
+  - ps: Remove-Item -Recurse -Force C:/cygwin64
+
 install:
   - docker version
 
