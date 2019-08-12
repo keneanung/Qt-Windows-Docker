@@ -9,6 +9,6 @@ install:
   - docker version
 
 build_script:
-  - "docker build -t keneanung/qt-windows:5.13.0-mingw-x86 ."
+  - docker build -t keneanung/qt-windows:5.12.3-mingw-x86 .
   - docker login -u keneanung -p "%DOCKER_PASS%"
-  - "docker push keneanung/qt-windows:5.13.0-mingw-x86"
+  - docker push keneanung/qt-windows:5.12.3-mingw-x86
